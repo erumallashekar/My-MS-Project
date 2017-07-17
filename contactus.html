@@ -1,0 +1,89 @@
+
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Super market Door Delivery</title>
+<script>
+function myFunction() {
+var errormessage = "";
+if(document.getElementById('fname').value == "")
+{
+errormessage += "enter the firstname \n";
+}
+if(document.getElementById('lname').value == "")
+{
+errormessage += "enter the lasttname \n";
+}
+if(document.getElementById('address').value == "")
+{
+errormessage += "enter the address \n";
+}
+if(document.getElementById('cname').value == "")
+{
+errormessage += "enter the cityname \n";
+}
+if(document.getElementById('email').value == "")
+{
+errormessage += "enter the valid emailId \n";
+}
+if(errormessage != ""){
+alert(errormessage);
+return false;
+}
+        
+    alert("Your Form is Successfully submited");
+	return true;
+
+}
+</script>
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+</head>
+<body>
+<div id="header">
+    <div id="logo">
+    <img src="mylogo1.png" width ="355px" height="160px"  align = "left" >
+    </div>
+<ul>
+    <li><a href="index.html" ><span>home</span></a></li>
+				<li><a href="about.html"><span>about us</span></a></li>
+				<li><a href="products.html"><span>products</span></a></li>
+				<li><a href="contactus.html"><span>contact us</span></a></li>			
+			</ul>
+</div>	
+	  
+		<div id="section">
+		<p align="left">
+		<form action="#" method="post" onsubmit="return myFunction();">
+<b>FirstName:&nbsp &nbsp <input type="text"  id="fname" name="firstname" placeholder="FirstName" value=""><br><br>
+<b>Lastname:&nbsp &nbsp  <input type="text" id="lname" name="Lastname" placeholder="LastName" value=""><br><br>
+   Address:&nbsp&nbsp &nbsp &nbsp <input type="text" id="address" name="Address" placeholder="Address" value=""></textare><br><br>
+      City:&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="text" id="cname" name="Cityname" placeholder="Cityname" value=""><br>
+ <p>State &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+ <select name="state">
+ <option value="">state</option>
+ <option value="">NH</option>
+    <option value="">MA</option>
+    <option value="">LA</option>
+    <option value="">NY</option>
+	<option value="">TA</option>
+	<option value="">CA</option>
+	
+	</select></p>
+  email Id:&nbsp &nbsp &nbsp <input type="text" id="email" name="emailId" placeholder="emailuser@domain.com" value=""><br>
+<br><input type="Reset" name="Reset" value="Reset" >&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp &nbsp &nbsp </b><button onclick="myFunction()">Submit</button>
+
+
+ </form>
+ </p>
+        
+		</div>
+ 
+	<div id="footer">	
+			
+	  <div>
+			<p ><b>@ DESIGN BY SHEKAR ERUMALLA</b></p>
+		</div>
+	</div>
+</body>
+</html>
